@@ -52,3 +52,10 @@ form {
   text-decoration: none;
   color: #5a6275;
 }
+.githubLink {
+  font-size: smaller;
+  display: block;
+  margin: 0 auto;
+  color: #5a6275;
+  padding: 100px;
+}
