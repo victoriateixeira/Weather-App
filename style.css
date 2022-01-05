@@ -1,0 +1,54 @@
+h1 {
+  color: #5a6275;
+
+  font-weight: 600;
+  font-size: 45px;
+  text-transform: capitalize;
+}
+h2 {
+  color: #5a6275;
+  font-size: 28px;
+}
+h3 {
+  color: #5a6275;
+  font-size: 60px;
+  color: #f3a633;
+  font-weight: lighter;
+}
+form {
+  padding-top: 20px;
+}
+.yellow-button {
+  color: #f3a633;
+  background-color: white;
+}
+#current-location {
+  color: #f3a633;
+  background-color: white;
+  padding: 6px;
+  border-color: #f3a633;
+  border-width: thin;
+  border-radius: 4px;
+}
+.current {
+  color: #f3a633;
+  font-size: 20px;
+}
+.main-icon {
+  font-size: 65px;
+  color: #5a6275;
+  position: relative;
+  left: 25px;
+}
+.secondary-temp {
+  font-size: 14px;
+}
+.secondary-icons {
+  text-align: center;
+  color: #5a6275;
+  font-size: 20px;
+}
+.degrees {
+  text-decoration: none;
+  color: #5a6275;
+}
