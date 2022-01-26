@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>Document</title>
+    <title>Weather App</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,104 +20,79 @@
   </head>
   <body>
     <div class="container">
-      <form id="city-form">
-        <div class="row">
-          <div class="col-5">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="enter a location"
-                id="city-searched"
-                required
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="city-form">
+            <div class="row">
+              <div class="col-6">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="enter a location"
+                    id="city-searched"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-1">
+                <input
+                  type="submit"
+                  value="Go"
+                  id="search-button"
+                  class="btn btn-warning yellow-button"
+                />
+              </div>
+              <div class="col-4">
+                <button id="current-location">Current Location</button>
+              </div>
+            </div>
+          </form>
+          <h1 id="city"></h1>
+          <ul>
+            <li id="date">Today</li>
+            <br />
+            <li id="description"></li>
+          </ul>
+
+          <div class="row">
+            <div class="col-2">
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt="weather icon"
+                id="icon"
               />
             </div>
-          </div>
-          <div class="col-1">
-            <input
-              type="submit"
-              value="Go"
-              id="search-button"
-              class="btn btn-warning yellow-button"
-            />
-          </div>
-          <div class="col-3">
-            <button id="current-location">Current Location</button>
+            <div class="col-3">
+              <div id="heading">
+                <span class="currentTemp"> </span>
+                <span class="degrees">
+                  <a href="#" class="degrees" id="celsius" class="active">
+                    ˚C |</a
+                  >
+                  <a href="#" class="degrees" id="fahrenheit">˚F </a>
+                </span>
+              </div>
+            </div>
+
+            <div class="col-4 current">
+              <ul>
+                <li>humidity: <span id="humidity">-</span> %</li>
+                <li>wind: <span id="wind">-</span> km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </form>
-      <h1>Sydney</h1>
-      <h2>today</h2>
-      <div class="row">
-        <div class="col-3">
-          <h3>
-            <span class="currentTemp"> 21 </span>
-            <span class="tempUnit">˚C</span>
-          </h3>
-          <span>
-            <a href="#" class="degrees" id="celsius">˚C</a>
-            /
-            <a href="#" class="degrees" id="fahrenheit">˚F</a>
-          </span>
-        </div>
-        <div class="col-2">
-          <i class="fas fa-sun main-icon"></i>
-        </div>
-        <div class="col-2 current">sunny precipitation: 10%</div>
+
+        <footer>
+          <a
+            href="https://github.com/victoriateixeira/Weather-App"
+            class="githubLink"
+            target="_blank"
+            >GitHub Repository</a
+          >
+        </footer>
       </div>
-      <br />
-      <div class="row secondary-icons">
-        <div class="col-1">
-          wed
-          <br />
-          <i class="fas fa-sun"></i>
-          <br />
-          <span class="secondary-temp">15/25˚C</span>
-        </div>
-        <div class="col-1">
-          thu
-          <br />
-          <i class="fas fa-cloud"></i>
-          <br />
-          <span class="secondary-temp">13/20˚C</span>
-        </div>
-        <div class="col-1">
-          fri
-          <br />
-          <i class="fas fa-cloud"></i>
-          <br />
-          <span class="secondary-temp">13/20˚C</span>
-        </div>
-        <div class="col-1">
-          sat
-          <br />
-          <i class="fas fa-cloud-showers-heavy"></i>
-          <br />
-          <span class="secondary-temp">13/20˚C</span>
-        </div>
-        <div class="col-1">
-          sun
-          <br />
-          <i class="fas fa-cloud-sun"></i>
-          <br />
-          <span class="secondary-temp">12/19˚C</span>
-        </div>
-        <div class="col-1">
-          mon
-          <br />
-          <i class="fas fa-sun"></i>
-          <br />
-          <span class="secondary-temp">17/25˚C</span>
-        </div>
-      </div>
-      <footer>
-        <a
-          href="https://github.com/victoriateixeira/Weather-App"
-          class="githubLink"
-          target="_blank"
-          >GitHub Repository</a
-        >
-      </footer>
     </div>
 
     <script src="src.js"></script>

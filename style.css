@@ -5,18 +5,48 @@ h1 {
   font-size: 45px;
   text-transform: capitalize;
 }
-h2 {
-  color: #5a6275;
-  font-size: 28px;
+
+form {
+  padding-top: 20px;
 }
-h3 {
+li,
+li #humidity,
+li #wind {
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+  margin-left: 0;
+  text-indent: none;
+}
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+}
+.currentTemp,
+.tempUnit {
   color: #5a6275;
   font-size: 60px;
   color: #f3a633;
   font-weight: lighter;
 }
-form {
-  padding-top: 20px;
+
+#description {
+  color: #f3a633;
+  font-size: 25px;
+  text-transform: capitalize;
+  position: relative;
+  right: 29px;
+}
+#date {
+  color: #5a6275;
+  font-size: 25px;
+  text-transform: capitalize;
+  position: relative;
+  right: 29px;
 }
 .yellow-button {
   color: #f3a633;
@@ -31,7 +61,7 @@ form {
   border-radius: 4px;
 }
 .current {
-  color: #f3a633;
+  color: #5a6275;
   font-size: 20px;
 }
 .main-icon {
@@ -51,11 +81,16 @@ form {
 .degrees {
   text-decoration: none;
   color: #5a6275;
+  position: relative;
+  bottom: 15px;
 }
 .githubLink {
   font-size: smaller;
-  display: block;
-  margin: 0 auto;
+
   color: #5a6275;
-  padding: 100px;
+  padding: 10px;
+}
+.degrees .active {
+  color: #5a6275;
+  cursor: default;
 }
