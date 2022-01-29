@@ -27,7 +27,7 @@ function formatDate(timestamp) {
     timeMinutes = `0${date.getMinutes()}`;
   }
 
-  return `${dayOfWeek}, ${timeHour}:${timeMinutes}`;
+  return `Last updated on ${dayOfWeek}, ${timeHour}:${timeMinutes}`;
 }
 
 function showTemperature(response) {

@@ -43,8 +43,8 @@ li #wind {
 }
 #date {
   color: #5a6275;
-  font-size: 25px;
-  text-transform: capitalize;
+  font-size: 15px;
+
   position: relative;
   right: 29px;
 }
@@ -70,14 +70,26 @@ li #wind {
   position: relative;
   left: 25px;
 }
-.secondary-temp {
-  font-size: 14px;
-}
-.secondary-icons {
+.weather-forecast {
   text-align: center;
   color: #5a6275;
-  font-size: 20px;
+  font-size: 15px;
+  margin-top: 20px;
 }
+.weather-forecast-icon {
+  display: block;
+  text-align: center;
+  width: 60px;
+}
+
+.weather-forecast-temp-max {
+  font-size: 12px;
+}
+.weather-forecast-temp-min {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
 .degrees {
   text-decoration: none;
   color: #5a6275;
