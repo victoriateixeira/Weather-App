@@ -12,11 +12,14 @@ form {
 li,
 li #humidity,
 li #wind {
+  font-size: 15px;
   text-decoration: none;
   list-style: none;
   text-align: left;
   margin-left: 0;
   text-indent: none;
+  position: relative;
+  top: 9px;
 }
 .weather-app {
   padding: 20px;
@@ -90,11 +93,11 @@ li #wind {
   opacity: 0.7;
 }
 
-.degrees {
+#celsius {
   text-decoration: none;
   color: #5a6275;
   position: relative;
-  bottom: 15px;
+  bottom: 30px;
 }
 .githubLink {
   font-size: smaller;
